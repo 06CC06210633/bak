@@ -212,7 +212,7 @@ def backup():
         compress()
     for dest in dests:
         dest_file = os.path.join(dest, timestamp + '.tar.xz')
-        shutil.copy2(TEMP_COMPRESS, dest_file)
+        shutil.copyfile(TEMP_COMPRESS, dest_file)
     size = os.path.getsize(TEMP_COMPRESS)
     backup_id = insert_backup(size, database)
     insert_backup_dests(dests, database, backup_id)
