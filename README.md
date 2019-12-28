@@ -9,4 +9,4 @@ simple script for backing up files and pathes
 <li><h5>add pattern</h5><li>
     <ol>add a regex pattern to be excluded</ol>
 <li><h5>backup full</h5></li>
-        <ol>to backup sources into dest</ol>
+        <ol>to backup sources into dests</ol>
